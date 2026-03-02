@@ -1,0 +1,2 @@
+pretty:
+	bunx prettier . --write
