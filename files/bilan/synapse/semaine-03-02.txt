@@ -1,0 +1,107 @@
+
+Semaine du 2 mars
+=================
+
+Objectifs:
+~~~~~~~~~~
+
+    (a).  5H.  Faire la l'intéraction (bouton pour confirmer) pour vérifier
+l'état du circuit et faire l'intéraction entre le panneau des disjoncteurs et le
+reste. Aussi, faire l'intéraction entre le gameManager et la scène.
+
+    (b).  4H.  Créer quelques des assets manquants pour les composantes d'un
+circuit (principalement : resistor, panneau de disjoncteurs, panneau d'aide)
+
+    (c).  1H.  Rédiger le journal de bord de la semaine
+
+
+Réalisation:
+~~~~~~~~~~~~
+
+    (a).  6H.  En majorité fait, il manque juste l'intéraction pour le bouton
+pour confirmer le circuit et déverrouiller le cadenas/porte si bon.
+
+    (b).  Rien fait encore.
+
+    (c).  Fait en 1H20.
+
+
+Analyse des écarts:
+~~~~~~~~~~~~~~~~~~~
+
+    (a).  Je me suis surtout concentrée sur l'aspect des breakers et
+l'intéraction entre la salle principale ainsi que le panneau du circuit et le
+panneau des disjoncteurs.  Il me reste à faire l'intéraction pour confirmer le
+circuit qui ne pourra pas être fait avant un certain temps puisque le circuit
+lui-même n'est pas encore fait (surtout le côté analyse).  De plus, Unity
+rencontrait des problèmes qui m'empêchait de travailler avec fluidité (voir plus
+bas).
+
+    (b).  Comme la semaine précédente.
+
+
+Problèmes rencontrés et solutions:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    (a).  J'ai rencontré plusieurs problèmes à séparer la salle en plusieurs
+scène (la principale, celle pour le circuit, celle pour le panneau, etc.).  J'ai
+changé la logique pour que tout soit dans la même scène et que la caméra
+respective soit activée et le reste désactivé.  Ce qui a résout mon problème.
+Cela m'évite aussi de devoir faire la sauvegarde des positions des objets,
+puisque rien n'est déchargé contrairement à si je changeais de scène.
+
+De plus, j'ai pris un certain retard, puisque la version 6000.0.58f2 d'Unity
+n'arrêtait pas de se plaindre.  Au début, je pensais que c'était à cause de mon
+code, mais je me suis rendue compte que c'est Unity lui-même qui bug (ce qui
+n'arrive pas dans une version supérieur telle que 6000.3.10f1).
+
+> NullReferenceException: Object reference not set to an instance of an object
+> System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) (at <d61daf581e2646abbbf5cae99f7100ce>:0)
+> System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) (at <d61daf581e2646abbbf5cae99f7100ce>:0)
+> UnityEngine.TextCore.Text.FontAsset.AddSynthesizedCharacter (System.UInt32 unicode, System.Boolean isFontFaceLoaded, System.Boolean addImmediately) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAsset.cs:1379)
+> UnityEngine.TextCore.Text.FontAsset.AddSynthesizedCharactersAndFaceMetrics () (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAsset.cs:1294)
+> UnityEngine.TextCore.Text.FontAsset.ReadFontAssetDefinition () (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAsset.cs:1027)
+> UnityEngine.TextCore.Text.FontAsset.GetCharacterInLookupCache (System.UInt32 unicode, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, UnityEngine.TextCore.Text.Character& character) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAsset.cs:1399)
+> UnityEngine.TextCore.Text.FontAssetUtilities.GetCharacterFromFontAsset_Internal (System.UInt32 unicode, UnityEngine.TextCore.Text.FontAsset sourceFontAsset, System.Boolean includeFallbacks, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, System.Boolean& isAlternativeTypeface, System.Boolean populateLigatures) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAssetUtilities.cs:57)
+> UnityEngine.TextCore.Text.FontAssetUtilities.GetCharacterFromFontAssetsInternal (System.UInt32 unicode, System.Collections.Generic.List`1[T] fontAssets, System.Boolean includeFallbacks, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, System.Boolean& isAlternativeTypeface, System.Boolean populateLigatures) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAssetUtilities.cs:273)
+> UnityEngine.TextCore.Text.FontAssetUtilities.GetCharacterFromFontAssetsInternal (System.UInt32 unicode, UnityEngine.TextCore.Text.FontAsset sourceFontAsset, System.Collections.Generic.List`1[T] fontAssets, System.Collections.Generic.List`1[T] OSFallbackList, System.Boolean includeFallbacks, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, System.Boolean& isAlternativeTypeface, System.Boolean populateLigatures) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAssetUtilities.cs:239)
+> UnityEngine.TextCore.Text.TextGenerator.GetEllipsisSpecialCharacter (UnityEngine.TextCore.Text.TextGenerationSettings generationSettings) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextGenerator/TextGeneratorPrepare.cs:1369)
+> UnityEngine.TextCore.Text.TextGenerator.GetSpecialCharacters (UnityEngine.TextCore.Text.TextGenerationSettings generationSettings) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextGenerator/TextGeneratorPrepare.cs:1337)
+> UnityEngine.TextCore.Text.TextGenerator.PrepareFontAsset (UnityEngine.TextCore.Text.TextGenerationSettings generationSettings) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextGenerator/TextGeneratorPrepare.cs:58)
+> UnityEngine.TextCore.Text.TextHandle.PrepareFontAsset () (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextHandle.cs:273)
+> UnityEngine.UIElements.UITKTextJobSystem+PrepareTextJobData.Execute (System.Int32 index) (at /home/bokken/build/output/unity/unity/Modules/UIElements/Core/Text/UITKTextJobSystem.cs:159)
+> Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[T].Execute (T& jobData, System.IntPtr additionalPtr, System.IntPtr bufferRangePatchData, Unity.Jobs.LowLevel.Unsafe.JobRanges& ranges, System.Int32 jobIndex) (at /home/bokken/build/output/unity/unity/Runtime/Jobs/Managed/IJobParallelFor.cs:47)
+
+et
+
+> UnityException: GetName can only be called from the main thread.
+> Constructors and field initializers will be executed from the loading thread when loading a scene.
+> Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+> UnityEngine.Object.GetName () (at <4219b1d86e444b64a8802c059cf9c5b3>:0)
+> UnityEngine.Object.get_name () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:226)
+> UnityEngine.TextCore.Text.FontAsset.ReadFontAssetDefinition () (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAsset.cs:1073)
+> UnityEngine.TextCore.Text.FontAsset.GetCharacterInLookupCache (System.UInt32 unicode, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, UnityEngine.TextCore.Text.Character& character) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAsset.cs:1399)
+> UnityEngine.TextCore.Text.FontAssetUtilities.GetCharacterFromFontAsset_Internal (System.UInt32 unicode, UnityEngine.TextCore.Text.FontAsset sourceFontAsset, System.Boolean includeFallbacks, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, System.Boolean& isAlternativeTypeface, System.Boolean populateLigatures) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAssetUtilities.cs:57)
+> UnityEngine.TextCore.Text.FontAssetUtilities.GetCharacterFromFontAssetsInternal (System.UInt32 unicode, System.Collections.Generic.List`1[T] fontAssets, System.Boolean includeFallbacks, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, System.Boolean& isAlternativeTypeface, System.Boolean populateLigatures) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAssetUtilities.cs:273)
+> UnityEngine.TextCore.Text.FontAssetUtilities.GetCharacterFromFontAssetsInternal (System.UInt32 unicode, UnityEngine.TextCore.Text.FontAsset sourceFontAsset, System.Collections.Generic.List`1[T] fontAssets, System.Collections.Generic.List`1[T] OSFallbackList, System.Boolean includeFallbacks, UnityEngine.TextCore.Text.FontStyles fontStyle, UnityEngine.TextCore.Text.TextFontWeight fontWeight, System.Boolean& isAlternativeTypeface, System.Boolean populateLigatures) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextAssets/FontAssetUtilities.cs:239)
+> UnityEngine.TextCore.Text.TextGenerator.GetEllipsisSpecialCharacter (UnityEngine.TextCore.Text.TextGenerationSettings generationSettings) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextGenerator/TextGeneratorPrepare.cs:1369)
+> UnityEngine.TextCore.Text.TextGenerator.GetSpecialCharacters (UnityEngine.TextCore.Text.TextGenerationSettings generationSettings) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextGenerator/TextGeneratorPrepare.cs:1337)
+> UnityEngine.TextCore.Text.TextGenerator.PrepareFontAsset (UnityEngine.TextCore.Text.TextGenerationSettings generationSettings) (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextGenerator/TextGeneratorPrepare.cs:58)
+> UnityEngine.TextCore.Text.TextHandle.PrepareFontAsset () (at /home/bokken/build/output/unity/unity/Modules/TextCoreTextEngine/Managed/TextHandle.cs:273)
+> UnityEngine.UIElements.UITKTextJobSystem+PrepareTextJobData.Execute (System.Int32 index) (at /home/bokken/build/output/unity/unity/Modules/UIElements/Core/Text/UITKTextJobSystem.cs:159)
+> Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[T].Execute (T& jobData, System.IntPtr additionalPtr, System.IntPtr bufferRangePatchData, Unity.Jobs.LowLevel.Unsafe.JobRanges& ranges, System.Int32 jobIndex) (at /home/bokken/build/output/unity/unity/Runtime/Jobs/Managed/IJobParallelFor.cs:47)
+
+Cependant, cela ne change rien à l'exécution de ma scène.  Seuls certains
+éléments de l'éditeur (surtout l'inspecteur) ne s'affiche plus.
+
+    (b).  Rien de particulier à noté.
+
+
+Technologies acquises et utilisées:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Références
+~~~~~~~~~~
+
+

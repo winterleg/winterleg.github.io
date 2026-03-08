@@ -1,0 +1,52 @@
+
+Semaine du 23 février
+=====================
+
+Objectifs:
+~~~~~~~~~~
+
+    (a).  Faire l'intéraction entre la scène et le graphe. (3h)
+
+    (b).  Continuer la création d'assets pour la scène de la salle électrique.
+(2h)
+
+
+Réalisation:
+~~~~~~~~~~~~
+
+    (a).  En 3H, fini.
+
+    (b).  2H, en partie.
+
+
+Analyse des écarts:
+~~~~~~~~~~~~~~~~~~~
+
+    (a).  Aucun.
+
+    (b).  Temps prévu, mais manque encore quelques assets, donc l'objectif n'est
+pas encore compléter.
+
+
+Problèmes rencontrés et solutions:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    (a).
+
+    (b).  Je ne trouvais pas de pièce en pixel art en 2D pour une salle
+électrique (style maison avec panneau de disjoncteur, fils électriques, etc.),
+donc j'ai opté pour une pièce plus simple style bureau [1].  Et j'ai switcher un
+peu mon idée que ça soit une salle électrique, mais plutôt un bureau où on doit
+réparer une fan.
+
+Technologies acquises et utilisées:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Aucune
+
+
+Références
+~~~~~~~~~~
+
+[1]: https://i.pinimg.com/1200x/d3/f9/9f/d3f99fe18f304ad8635a5375376a1895.jpg
+

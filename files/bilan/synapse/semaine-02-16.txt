@@ -1,0 +1,91 @@
+
+Semaine du 16 février
+=====================
+
+Objectifs
+~~~~~~~~~
+
+    (a).  Créer du code pour faire un graphe du circuit à partir de la matrice
+(1h).
+
+    (b).  Créer les préfabs associés au circuit (salle électrique) (2h).
+
+Total estimé: 3h
+
+Réalisation
+~~~~~~~~~~~
+
+    (a).  Objectif fini en 1h 40 minutes.  Il manque seulement à faire l'analyse
+du circuit plus tard.
+
+    (b). Objectif loin d'être fini.
+
+Total estimé: 3h
+
+
+Analyse des écarts
+~~~~~~~~~~~~~~~~~~
+
+    (a).  30 minutes d'écart puisque j'avais fait une classe à part pour le
+graph et que cela entraînait des problèmes.  Et ensuite je me suis rendue
+compte qu'utiliser une matrice puis faire le graphe était redondant puisque
+qu'un graphe peut être utilisé en partant.
+
+    (b).  La création d'assets est plus longue que je pensais (et plus
+ennuyante).
+
+
+Problèmes rencontrés et solutions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    (a).  Faire une classe à part pour le graph engendrait des conflits de ref
+et autre, donc j'ai du merge la-dite classe avec CircuitMatrix.
+
+> public bool CheckerValidité() {
+>     CircuitGraph graph = new CircuitGraph(this);
+>     return false;
+> }
+csharp: Argument 1 must be passed with the 'ref' keyword:
+
+> public bool CheckerValidité() {
+>     CircuitGraph graph = new CircuitGraph(ref this);
+>     return false;
+> }
+csharp: Cannot use 'this' as a ref or out value because it is read-only
+
+Le même problème se produit si je passe CircuitComposante[,] plutôt que
+CircuitMatrix:
+
+> public CircuitGraph(ref CircuitComposante[,] matrix)
+
+> public bool CheckerValidité()
+> {
+>     CircuitGraph graph = new CircuitGraph(this.p_Grid);
+>     //ou
+>     CircuitGraph graph = new CircuitGraph(ref this.p_Grid);
+>
+>     return false;
+> }
+
+J'ai donc opté pour mettre le code du graphe dans celui de la matrice ce qui
+m'a pris du temps supplémentaires.
+
+Plus tard, je me suis aussi rendu compte que faire une matrice et gérer un
+graphe à partir de celui-ci était pas vraiment utile / efficace et que
+simplement utiliser un dict<> et un graphe en partant était plus efficace (reste
+à voir comment ça opère avec le calcul de tension / résistance / etc. plus
+tard).
+
+
+Technologies acquises et utilisées
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    (a).  Création de graphes [1] [2] pour obtenir les chemins possibles dans un
+circuit.
+
+
+Références
+~~~~~~~~~~
+
+[1]: https://www.codecademy.com/article/depth-first-search-dfs-algorithm
+[2]: https://www.geeksforgeeks.org/dsa/find-paths-given-source-destination/
