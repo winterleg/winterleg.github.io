@@ -21,7 +21,7 @@ Réalisation:
     (a).  6H.  En majorité fait, il manque juste l'intéraction pour le bouton
 pour confirmer le circuit et déverrouiller le cadenas/porte si bon.
 
-    (b).  Rien fait encore.
+    (b).  0H.  Rien fait.
 
     (c).  Fait en 1H20.
 
@@ -37,7 +37,8 @@ lui-même n'est pas encore fait (surtout le côté analyse).  De plus, Unity
 rencontrait des problèmes qui m'empêchait de travailler avec fluidité (voir plus
 bas).
 
-    (b).  Comme la semaine précédente.
+    (b).  Je n'ai pas eu assez de temps dans la semaine pour faire l'objectif
+prévu.
 
 
 Problèmes rencontrés et solutions:

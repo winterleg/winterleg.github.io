@@ -1,9 +1,16 @@
 
-Semaine du 23 mars
-=================
+Semaine du 16 mars
+==================
 
 Objectifs:
 ~~~~~~~~~~
+
+    (a).  2H.  Faire du code pour clicker sur un breaker pour l'enclencher /
+déclencher
+
+    (b).  5H.  Faire les assets pour les résistances et le cadenas.
+
+Total: 7H
 
 
 Réalisation:

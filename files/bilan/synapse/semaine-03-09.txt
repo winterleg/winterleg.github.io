@@ -5,25 +5,64 @@ Semaine du 9 mars
 Objectifs:
 ~~~~~~~~~~
 
-    (a).
+    (a).  1H, Rédaction du journal de bord pour cette semaine.
 
+    (b).  5H, travailler sur la création des assets.
+
+    (c).  1H, ajouter l'interaction entre le circuit et le breaker.
+
+Total: 7H
 
 
 Réalisation:
 ~~~~~~~~~~~~
 
+    (a).  1h.  Fait.
+
+    (b).  4H,  J'ai créé les nœuds/fils pour le circuit.  Il manque les
+résistances, le cadenas et la source du courant.
+
+    (c).  40m,  complet.  Peut-être devra revisité le code pour
+enclenché/déclenché les breakers.
+
 
 Analyse des écarts:
 ~~~~~~~~~~~~~~~~~~~
+
+    (a).  Aucune
+
+    (b).  La création des nœuds m'a pris plus de temps que je pensait, puisque
+j'ai choisi de faire des nœuds où les branches se génère automatiquement si un
+objet est à un de ses côtés.  Cela a nécessité du code supplémentaire pour faire
+cette interaction.  Ensuite, j'ai passé environ deux heures à corriger certains
+aspects de mon code.  Par exemple, bouger les éléments du circuit ne
+fonctionnait que quand il y a avait qu'un seul élément dans celui-ci (je faisais
+un break plutôt qu'un continue dans une de mes boucles).  De plus,
+l'organisation du code était peu efficace, il fallait créer les objets dans la
+scène puis les ajoutés une par une dans CircuitController.  J'ai donc changé le
+code pour qu'il trouve tout seul les objets dans la scène en utilisant
+GetComponentsInChildren<T>.
 
 
 Problèmes rencontrés et solutions:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    (a).  Aucune.
+
+    (b).  Le code était peu efficace comme mentionné plus haut, donc j'ai
+réorganiser certains aspects.
+
+    (c).  Moins de temps, puisque il y avait quelques références d'objets que je
+pensais utilisés, mais c'était plus simple que je pensais.
+
 
 Technologies acquises et utilisées:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Aucune en particulier.
+
 
 Références
 ~~~~~~~~~~
+
+
