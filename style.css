@@ -1,0 +1,60 @@
+* {
+  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
+
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+h1 {
+  font-size: 2.3em;
+  color: #2d4d66;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #3d6661;
+}
+
+li {
+  list-style-type: lower-alpha;
+}
+
+table {
+  background: #e8e8e8;
+  color: #333333;
+
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.4em 0.8em;
+}
+
+a {
+  color: #4a7a9e;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    background-color: #141415;
+    color: #cdcdcd;
+  }
+
+  h1 {
+    color: #6e94b2;
+  }
+
+  h2 {
+    color: #b4d4cf;
+  }
+
+  table {
+    background: #14141a;
+    color: #c7c6c6;
+  }
+
+  a {
+    color: #6e94b2;
+  }
+}

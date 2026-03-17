@@ -1,0 +1,43 @@
+:lang: fr
+:nofooter:
+:stylesheet: compact.css
+
+= Winter
+:docinfo: private,index-docinfo-footer.html
+
+私はTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です.
+
+Colemak > QWERTY
+
+== プロジェクト
+
+[cols="5%,20%,75%"]
+|===
+
+|
+|https://codeberg.org/winterl/dev[dev]
+|La configuration de mon système pour mon usage personnel.
+
+|
+|https://codeberg.org/winterl/linc[linc]
+|Une collection de code en C pour l'algèbre linéaire.
+
+|
+|https://codeberg.org/winterl/tmux-goway[tmux-goway]
+|Un changeur de session TMUX.
+
+|===
+
+== Courts textes
+* link:view.html?file=files/textes/2025-10-Colorless.txt[2025-10 Colorless]
+* link:view.html?file=files/textes/2025-10-SOufrance.txt[2025-10 Souffrance]
+* link:view.html?file=files/textes/2025-10-Colorless.txt[2025-10 Colorless]
+* link:view.html?file=files/textes/2025-10-Les-logiciels-libres-ouverts.txt[2025-10
+    Les logiciels libres et les logiciels à code ouvert, et leur place dans le monde
+    de l'informatique]
+
+== Contacts
+* https://codeberg.org/winterl[Codeberg/winterl]
+* [Matrix] @winter.l:matrix.org
+* winter.leg.147 [at] gmail.com
+
