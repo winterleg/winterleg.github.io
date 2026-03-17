@@ -5,7 +5,7 @@
 = Winter
 :docinfo: private,index-docinfo-footer.html
 
-私はTypst、.NET、C/C\++、Go興味のあるコンピューターサイエンス選考の学生です。
+私はTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。
 
 Colemak > QWERTY
 
