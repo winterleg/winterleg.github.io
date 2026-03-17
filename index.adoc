@@ -11,22 +11,12 @@ Colemak > QWERTY
 
 == プロジェクト
 
-[cols="5%,20%,75%"]
-|===
-
-|
-|https://codeberg.org/winterl/dev[dev]
-|La configuration de mon système pour mon usage personnel.
-
-|
-|https://codeberg.org/winterl/linc[linc]
-|Une collection de code en C pour l'algèbre linéaire.
-
-|
-|https://codeberg.org/winterl/tmux-goway[tmux-goway]
-|Un changeur de session TMUX.
-
-|===
+https://codeberg.org/winterl/dev[dev]:::
+  La configuration de mon système pour mon usage personnel.
+https://codeberg.org/winterl/linc[linc]:::
+  Une collection de code en C pour l'algèbre linéaire.
+https://codeberg.org/winterl/tmux-goway[tmux-goway]:::
+  Un changeur de session TMUX.
 
 == Courts textes
 * link:view.html?file=files/textes/2025-10-Colorless.txt[2025-10 Colorless]
