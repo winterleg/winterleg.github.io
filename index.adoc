@@ -26,6 +26,10 @@ https://codeberg.org/winterl/tmux-goway[tmux-goway]:::
     Les logiciels libres et les logiciels à code ouvert, et leur place dans le monde
     de l'informatique]
 
+== Long textes
+* link:files/romans/le-goût-de-tes-baisers.pdf[Le goût de tes
+  baisers]
+
 == Contacts
 * https://codeberg.org/winterl[Codeberg/winterl]
 * [Matrix] @winter.l:matrix.org

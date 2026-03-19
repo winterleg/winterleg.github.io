@@ -59,22 +59,24 @@
       <pre id="content">Loading...</pre>
     </div>
     <script>
-      document.getElementById('back-link').href = window.location.pathname.replace(/view\.html$/, 'index.html');
+      document.getElementById("back-link").href =
+        window.location.pathname.replace(/view\.html$/, "index.html");
 
       const params = new URLSearchParams(window.location.search);
-      const file = params.get('file');
+      const file = params.get("file");
 
       if (file) {
         fetch(file)
-          .then(r => r.text())
-          .then(text => {
-            document.getElementById('content').textContent = text;
+          .then((r) => r.text())
+          .then((text) => {
+            document.getElementById("content").textContent = text;
           })
-          .catch(e => {
-            document.getElementById('content').textContent = 'Error loading file: ' + e;
+          .catch((e) => {
+            document.getElementById("content").textContent =
+              "Error loading file: " + e;
           });
       } else {
-        document.getElementById('content').textContent = 'No file specified';
+        document.getElementById("content").textContent = "No file specified";
       }
     </script>
   </body>

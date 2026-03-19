@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.26">
-<title>Winter</title>
-<style>
-/*
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Asciidoctor 2.0.26" />
+    <title>Winter</title>
+    <style>
+      /*
  * compact.css, version 1.9
  * Author:  Alex Efros <powerman@powerman.name>
  * Licence: Public Domain
@@ -15,612 +15,656 @@
  * Usage: asciidoc -a theme=compact ...
  */
 
-:root {
-  --bg-color: #f5f5f5;
-  --text-color: #333333;
-  --h1-color: #2d4d66;
-  --h2-color: #3d6661;
-  --h3-color: #3d6661;
-  --link-color: #4a7a9e;
-  --border-color: #527bbd;
-  --table-bg: #e8e8e8;
-  --code-bg: #f4f4f4;
-  --code-color: #3c598a;
-  --sidebar-bg: #ffffee;
-}
+      :root {
+        --bg-color: #f5f5f5;
+        --text-color: #333333;
+        --h1-color: #2d4d66;
+        --h2-color: #3d6661;
+        --h3-color: #3d6661;
+        --link-color: #4a7a9e;
+        --border-color: #527bbd;
+        --table-bg: #e8e8e8;
+        --code-bg: #f4f4f4;
+        --code-color: #3c598a;
+        --sidebar-bg: #ffffee;
+      }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #141415;
-    --text-color: #cdcdcd;
-    --h1-color: #6e94b2;
-    --h2-color: #b4d4cf;
-    --h3-color: #b4d4cf;
-    --link-color: #6e94b2;
-    --border-color: #6e94b2;
-    --table-bg: #14141a;
-    --code-bg: #1a1a1a;
-    --code-color: #b4d4cf;
-    --sidebar-bg: #1a1a1a;
-  }
-}
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #141415;
+          --text-color: #cdcdcd;
+          --h1-color: #6e94b2;
+          --h2-color: #b4d4cf;
+          --h3-color: #b4d4cf;
+          --link-color: #6e94b2;
+          --border-color: #6e94b2;
+          --table-bg: #14141a;
+          --code-bg: #1a1a1a;
+          --code-color: #b4d4cf;
+          --sidebar-bg: #1a1a1a;
+        }
+      }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-img {
-  border: 0;
-}
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        border: 0;
+      }
 
-/*** Layout ***/
+      /*** Layout ***/
 
-body {
-  margin: 10px auto;
-  padding: 0 20px;
-  max-width: 90ch;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-#header br {
-  display: none;
-}
-#revnumber {
-  display: block;
-}
-#toc {
-  margin: 1em 0;
-  text-align: center;
-}
-.toclevel2 {
-  margin-left: 1em;
-}
-.toclevel3 {
-  margin-left: 2em;
-}
-.toclevel4 {
-  margin-left: 3em;
-}
-footer {
-  font-size: 0.6em;
-}
-#footer {
-  font-size: 0.5em;
-  margin-top: 2em;
-}
+      body {
+        margin: 10px auto;
+        padding: 0 20px;
+        max-width: 90ch;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      #header br {
+        display: none;
+      }
+      #revnumber {
+        display: block;
+      }
+      #toc {
+        margin: 1em 0;
+        text-align: center;
+      }
+      .toclevel2 {
+        margin-left: 1em;
+      }
+      .toclevel3 {
+        margin-left: 2em;
+      }
+      .toclevel4 {
+        margin-left: 3em;
+      }
+      footer {
+        font-size: 0.6em;
+      }
+      #footer {
+        font-size: 0.5em;
+        margin-top: 2em;
+      }
 
-#preamble .sectionbody,
-h2,
-h3,
-h4,
-h5 {
-  margin: 1em 0 0 0;
-}
+      #preamble .sectionbody,
+      h2,
+      h3,
+      h4,
+      h5 {
+        margin: 1em 0 0 0;
+      }
 
-.admonitionblock,
-.listingblock,
-.sidebarblock,
-.exampleblock,
-.tableblock,
-.literalblock {
-  margin: 1em 0;
-}
-.admonitionblock td.icon {
-  padding-right: 0.5em;
-}
-.admonitionblock td.content {
-  padding-left: 0.5em;
-}
-.listingblock .content {
-  padding: 0.5em;
-}
-.sidebarblock > .content {
-  padding: 0.5em;
-}
-.exampleblock > .content {
-  padding: 0 0.5em;
-}
-.tableblock caption {
-  padding: 0 0 0.5em 0;
-}
-.tableblock thead th,
-.tableblock tbody td,
-.tableblock tfoot td {
-  padding: 0 0.5em;
-}
-.quoteblock {
-  padding: 0 2em;
-}
+      .admonitionblock,
+      .listingblock,
+      .sidebarblock,
+      .exampleblock,
+      .tableblock,
+      .literalblock {
+        margin: 1em 0;
+      }
+      .admonitionblock td.icon {
+        padding-right: 0.5em;
+      }
+      .admonitionblock td.content {
+        padding-left: 0.5em;
+      }
+      .listingblock .content {
+        padding: 0.5em;
+      }
+      .sidebarblock > .content {
+        padding: 0.5em;
+      }
+      .exampleblock > .content {
+        padding: 0 0.5em;
+      }
+      .tableblock caption {
+        padding: 0 0 0.5em 0;
+      }
+      .tableblock thead th,
+      .tableblock tbody td,
+      .tableblock tfoot td {
+        padding: 0 0.5em;
+      }
+      .quoteblock {
+        padding: 0 2em;
+      }
 
-.paragraph {
-  margin: 1em 0 0 0;
-}
-.sidebarblock .paragraph:first-child,
-.exampleblock .paragraph:first-child,
-.admonitionblock .paragraph:first-child {
-  margin: 0;
-}
+      .paragraph {
+        margin: 1em 0 0 0;
+      }
+      .sidebarblock .paragraph:first-child,
+      .exampleblock .paragraph:first-child,
+      .admonitionblock .paragraph:first-child {
+        margin: 0;
+      }
 
-.hdlist tr td {
-  padding-bottom: 0.3em;
-}
-.hdlist tr:last-child td {
-  padding-bottom: 0;
-}
-.hdlist tr tr td {
-  padding-bottom: 0;
-}
+      .hdlist tr td {
+        padding-bottom: 0.3em;
+      }
+      .hdlist tr:last-child td {
+        padding-bottom: 0;
+      }
+      .hdlist tr tr td {
+        padding-bottom: 0;
+      }
 
-.ulist,
-.olist,
-.dlist,
-.hdlist,
-.qlist {
-  margin: 1em 0;
-}
-.hdlist2 .ulist,
-.hdlist2 .olist,
-.hdlist2 .dlist,
-.hdlist2 .hdlist,
-.hdlist2 .qlist,
-li .ulist,
-li .olist,
-li .dlist,
-li .hdlist,
-li .qlist,
-dd .ulist,
-dd .olist,
-dd .dlist,
-dd .hdlist,
-dd .qlist {
-  margin: 0;
-}
-ul {
-  margin-left: 1.5em;
-}
-ol {
-  margin-left: 2em;
-}
-dd {
-  margin-left: 3em;
-}
-td.hdlist1 {
-  padding-right: 1em;
-}
+      .ulist,
+      .olist,
+      .dlist,
+      .hdlist,
+      .qlist {
+        margin: 1em 0;
+      }
+      .hdlist2 .ulist,
+      .hdlist2 .olist,
+      .hdlist2 .dlist,
+      .hdlist2 .hdlist,
+      .hdlist2 .qlist,
+      li .ulist,
+      li .olist,
+      li .dlist,
+      li .hdlist,
+      li .qlist,
+      dd .ulist,
+      dd .olist,
+      dd .dlist,
+      dd .hdlist,
+      dd .qlist {
+        margin: 0;
+      }
+      ul {
+        margin-left: 1.5em;
+      }
+      ol {
+        margin-left: 2em;
+      }
+      dd {
+        margin-left: 3em;
+      }
+      td.hdlist1 {
+        padding-right: 1em;
+      }
 
-/*** Fonts ***/
+      /*** Fonts ***/
 
-body {
-  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
-  font-size: 25px;
-}
-#header {
-  text-align: center;
-  font-family: Georgia, serif;
-}
-#header h1 {
-  font-size: 2em;
-  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
-}
-#footer {
-  text-align: center;
-  font-family: Georgia, serif;
-}
-#email {
-  font-size: 0.85em;
-}
-#revnumber {
-  font-size: 0.75em;
-}
-#toc {
-  font-size: 0.9em;
-}
-#toctitle {
-  font-weight: bold;
-}
-#footer {
-  font-size: 0.8em;
-}
+      body {
+        font-family: "Courier Prime", "Zen Maru Gothic", monospace;
+        font-size: 25px;
+      }
+      #header {
+        text-align: center;
+        font-family: Georgia, serif;
+      }
+      #header h1 {
+        font-size: 2em;
+        font-family: "Courier Prime", "Zen Maru Gothic", monospace;
+      }
+      #footer {
+        text-align: center;
+        font-family: Georgia, serif;
+      }
+      #email {
+        font-size: 0.85em;
+      }
+      #revnumber {
+        font-size: 0.75em;
+      }
+      #toc {
+        font-size: 0.9em;
+      }
+      #toctitle {
+        font-weight: bold;
+      }
+      #footer {
+        font-size: 0.8em;
+      }
 
-h2,
-h3,
-h4,
-h5,
-.title {
-  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
-}
-h2 {
-  font-size: 1.5em;
-}
-.sectionbody {
-  font-size: 0.85em;
-}
-.sectionbody .sectionbody {
-  font-size: inherit;
-}
-h3 {
-  font-size: 159%;
-} /* 1.35em */
-h4 {
-  font-size: 141%;
-} /* 1.2em */
-h5 {
-  font-size: 118%;
-} /* 1em */
-.title {
-  font-size: 106%; /* 0.9em */
-  font-weight: bold;
-}
+      h2,
+      h3,
+      h4,
+      h5,
+      .title {
+        font-family: "Courier Prime", "Zen Maru Gothic", monospace;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      .sectionbody {
+        font-size: 0.85em;
+      }
+      .sectionbody .sectionbody {
+        font-size: inherit;
+      }
+      h3 {
+        font-size: 159%;
+      } /* 1.35em */
+      h4 {
+        font-size: 141%;
+      } /* 1.2em */
+      h5 {
+        font-size: 118%;
+      } /* 1em */
+      .title {
+        font-size: 106%; /* 0.9em */
+        font-weight: bold;
+      }
 
-code,
-.monospaced {
-  font-family: monospace;
-  font-size: 106%;
-} /* 0.9em */
-pre {
-  font-size: 141%;
-} /* 1.2em */
-p code {
-  font-size: 118%;
-} /* 1em */
-dt,
-td.hdlist1 {
-  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
-  font-size: 118%; /* 1em */
-  font-style: normal;
-}
-.qlist em {
-  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
-  font-size: 118%; /* 1em */
-  font-style: italic;
-}
-.tableblock tfoot td {
-  font-weight: bold;
-}
+      code,
+      .monospaced {
+        font-family: monospace;
+        font-size: 106%;
+      } /* 0.9em */
+      pre {
+        font-size: 141%;
+      } /* 1.2em */
+      p code {
+        font-size: 118%;
+      } /* 1em */
+      dt,
+      td.hdlist1 {
+        font-family: "Courier Prime", "Zen Maru Gothic", monospace;
+        font-size: 118%; /* 1em */
+        font-style: normal;
+      }
+      .qlist em {
+        font-family: "Courier Prime", "Zen Maru Gothic", monospace;
+        font-size: 118%; /* 1em */
+        font-style: italic;
+      }
+      .tableblock tfoot td {
+        font-weight: bold;
+      }
 
-/*** Colors and Backgrounds ***/
+      /*** Colors and Backgrounds ***/
 
-h1 {
-  color: var(--h1-color);
-  border-bottom: 2px solid var(--border-color);
-}
-#footer {
-  border-top: 2px solid var(--border-color);
-}
+      h1 {
+        color: var(--h1-color);
+        border-bottom: 2px solid var(--border-color);
+      }
+      #footer {
+        border-top: 2px solid var(--border-color);
+      }
 
-h2 {
-  color: var(--h2-color);
-  border-bottom: 2px solid var(--border-color);
-}
-h3 {
-  color: var(--h3-color);
-  border-bottom: 2px solid var(--border-color);
-}
-h3 {
-  display: inline-block;
-}
-h4,
-h5 {
-  color: var(--h3-color);
-}
+      h2 {
+        color: var(--h2-color);
+        border-bottom: 2px solid var(--border-color);
+      }
+      h3 {
+        color: var(--h3-color);
+        border-bottom: 2px solid var(--border-color);
+      }
+      h3 {
+        display: inline-block;
+      }
+      h4,
+      h5 {
+        color: var(--h3-color);
+      }
 
-.admonitionblock td.content {
-  border-left: 2px solid var(--border-color);
-}
-.listingblock .content {
-  background: var(--code-bg);
-  border: 1px solid var(--border-color);
-  border-left: 5px solid var(--border-color);
-}
-.sidebarblock > .content {
-  background: var(--sidebar-bg);
-  border: 1px solid var(--border-color);
-  border-left: 5px solid var(--border-color);
-}
-.exampleblock > .content {
-  border-left: 2px solid var(--border-color);
-}
-.quoteblock {
-  border-left: 5px solid var(--border-color);
-}
-.tableblock table {
-  border-collapse: collapse;
-  border-width: 3px;
-  border-color: var(--border-color);
-}
-.tableblock table[frame="hsides"] {
-  border-style: solid none;
-}
-.tableblock table[frame="border"] {
-  border-style: solid;
-}
-.tableblock table[frame="void"] {
-  border-style: none;
-}
-.tableblock table[frame="vsides"] {
-  border-style: none solid;
-}
-.tableblock table[rules="all"] tbody tr *,
-.tableblock table[rules="rows"] tbody tr * {
-  border-top: 1px solid var(--border-color);
-}
-.tableblock table[rules="all"] tr *,
-.tableblock table[rules="cols"] tr * {
-  border-left: 1px solid var(--border-color);
-}
-.tableblock table tbody tr:first-child * {
-  border-top: 1px solid var(--bg-color);
-}
-.tableblock table tr *:first-child {
-  border-left: none;
-}
-.tableblock table[frame] thead tr *,
-.tableblock table[frame] thead tr * {
-  border-top: 1px solid var(--bg-color);
-  border-bottom: 2px solid var(--border-color);
-}
-.tableblock table tr td p.table,
-.tableblock table tr td p.table * {
-  border: 0;
-}
+      .admonitionblock td.content {
+        border-left: 2px solid var(--border-color);
+      }
+      .listingblock .content {
+        background: var(--code-bg);
+        border: 1px solid var(--border-color);
+        border-left: 5px solid var(--border-color);
+      }
+      .sidebarblock > .content {
+        background: var(--sidebar-bg);
+        border: 1px solid var(--border-color);
+        border-left: 5px solid var(--border-color);
+      }
+      .exampleblock > .content {
+        border-left: 2px solid var(--border-color);
+      }
+      .quoteblock {
+        border-left: 5px solid var(--border-color);
+      }
+      .tableblock table {
+        border-collapse: collapse;
+        border-width: 3px;
+        border-color: var(--border-color);
+      }
+      .tableblock table[frame="hsides"] {
+        border-style: solid none;
+      }
+      .tableblock table[frame="border"] {
+        border-style: solid;
+      }
+      .tableblock table[frame="void"] {
+        border-style: none;
+      }
+      .tableblock table[frame="vsides"] {
+        border-style: none solid;
+      }
+      .tableblock table[rules="all"] tbody tr *,
+      .tableblock table[rules="rows"] tbody tr * {
+        border-top: 1px solid var(--border-color);
+      }
+      .tableblock table[rules="all"] tr *,
+      .tableblock table[rules="cols"] tr * {
+        border-left: 1px solid var(--border-color);
+      }
+      .tableblock table tbody tr:first-child * {
+        border-top: 1px solid var(--bg-color);
+      }
+      .tableblock table tr *:first-child {
+        border-left: none;
+      }
+      .tableblock table[frame] thead tr *,
+      .tableblock table[frame] thead tr * {
+        border-top: 1px solid var(--bg-color);
+        border-bottom: 2px solid var(--border-color);
+      }
+      .tableblock table tr td p.table,
+      .tableblock table tr td p.table * {
+        border: 0;
+      }
 
-.hdlist1,
-em {
-  color: var(--code-color);
-}
-code,
-.monospaced {
-  color: var(--code-color);
-  background: var(--code-bg);
-}
-.literalblock code {
-  background: inherit;
-}
+      .hdlist1,
+      em {
+        color: var(--code-color);
+      }
+      code,
+      .monospaced {
+        color: var(--code-color);
+        background: var(--code-bg);
+      }
+      .literalblock code {
+        background: inherit;
+      }
 
-a {
-  color: var(--link-color);
-}
+      a {
+        color: var(--link-color);
+      }
 
-li {
-  color: #a0a0a0;
-}
-li > * {
-  color: var(--text-color);
-}
+      li {
+        color: #a0a0a0;
+      }
+      li > * {
+        color: var(--text-color);
+      }
 
-span.aqua {
-  color: aqua;
-}
-span.black {
-  color: black;
-}
-span.blue {
-  color: blue;
-}
-span.fuchsia {
-  color: fuchsia;
-}
-span.gray {
-  color: gray;
-}
-span.green {
-  color: green;
-}
-span.lime {
-  color: lime;
-}
-span.maroon {
-  color: maroon;
-}
-span.navy {
-  color: navy;
-}
-span.olive {
-  color: olive;
-}
-span.purple {
-  color: purple;
-}
-span.red {
-  color: red;
-}
-span.silver {
-  color: silver;
-}
-span.teal {
-  color: teal;
-}
-span.white {
-  color: white;
-}
-span.yellow {
-  color: yellow;
-}
+      span.aqua {
+        color: aqua;
+      }
+      span.black {
+        color: black;
+      }
+      span.blue {
+        color: blue;
+      }
+      span.fuchsia {
+        color: fuchsia;
+      }
+      span.gray {
+        color: gray;
+      }
+      span.green {
+        color: green;
+      }
+      span.lime {
+        color: lime;
+      }
+      span.maroon {
+        color: maroon;
+      }
+      span.navy {
+        color: navy;
+      }
+      span.olive {
+        color: olive;
+      }
+      span.purple {
+        color: purple;
+      }
+      span.red {
+        color: red;
+      }
+      span.silver {
+        color: silver;
+      }
+      span.teal {
+        color: teal;
+      }
+      span.white {
+        color: white;
+      }
+      span.yellow {
+        color: yellow;
+      }
 
-span.aqua-background {
-  background: aqua;
-}
-span.black-background {
-  background: black;
-}
-span.blue-background {
-  background: blue;
-}
-span.fuchsia-background {
-  background: fuchsia;
-}
-span.gray-background {
-  background: gray;
-}
-span.green-background {
-  background: green;
-}
-span.lime-background {
-  background: lime;
-}
-span.maroon-background {
-  background: maroon;
-}
-span.navy-background {
-  background: navy;
-}
-span.olive-background {
-  background: olive;
-}
-span.purple-background {
-  background: purple;
-}
-span.red-background {
-  background: red;
-}
-span.silver-background {
-  background: silver;
-}
-span.teal-background {
-  background: teal;
-}
-span.white-background {
-  background: white;
-}
-span.yellow-background {
-  background: yellow;
-}
+      span.aqua-background {
+        background: aqua;
+      }
+      span.black-background {
+        background: black;
+      }
+      span.blue-background {
+        background: blue;
+      }
+      span.fuchsia-background {
+        background: fuchsia;
+      }
+      span.gray-background {
+        background: gray;
+      }
+      span.green-background {
+        background: green;
+      }
+      span.lime-background {
+        background: lime;
+      }
+      span.maroon-background {
+        background: maroon;
+      }
+      span.navy-background {
+        background: navy;
+      }
+      span.olive-background {
+        background: olive;
+      }
+      span.purple-background {
+        background: purple;
+      }
+      span.red-background {
+        background: red;
+      }
+      span.silver-background {
+        background: silver;
+      }
+      span.teal-background {
+        background: teal;
+      }
+      span.white-background {
+        background: white;
+      }
+      span.yellow-background {
+        background: yellow;
+      }
 
-span.big {
-  font-size: 2em;
-}
-span.small {
-  font-size: 0.6em;
-}
+      span.big {
+        font-size: 2em;
+      }
+      span.small {
+        font-size: 0.6em;
+      }
 
-span.underline {
-  text-decoration: underline;
-}
-span.overline {
-  text-decoration: overline;
-}
-span.line-through {
-  text-decoration: line-through;
-}
+      span.underline {
+        text-decoration: underline;
+      }
+      span.overline {
+        text-decoration: overline;
+      }
+      span.line-through {
+        text-decoration: line-through;
+      }
 
-/*** Misc ***/
+      /*** Misc ***/
 
-.admonitionblock td.icon {
-  vertical-align: top;
-}
-.attribution {
-  text-align: right;
-}
-.unbreakable {
-  page-break-inside: avoid;
-}
+      .admonitionblock td.icon {
+        vertical-align: top;
+      }
+      .attribution {
+        text-align: right;
+      }
+      .unbreakable {
+        page-break-inside: avoid;
+      }
 
-ul {
-  list-style-type: disc;
-}
-ol.arabic {
-  list-style-type: decimal;
-}
-ol.loweralpha {
-  list-style-type: lower-alpha;
-}
-ol.upperalpha {
-  list-style-type: upper-alpha;
-}
-ol.lowerroman {
-  list-style-type: lower-roman;
-}
-ol.upperroman {
-  list-style-type: upper-roman;
-}
-.hdlist td {
-  vertical-align: top;
-}
-
-</style>
-</head>
-<body class="article">
-<div id="header">
-<h1>Winter</h1>
-</div>
-<div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>私はTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。</p>
-</div>
-<div class="paragraph">
-<p>Colemak &gt; QWERTY</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_プロジェクト">プロジェクト</h2>
-<div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1"><a href="https://codeberg.org/winterl/dev">dev</a></dt>
-<dd>
-<p>La configuration de mon système pour mon usage personnel.</p>
-</dd>
-<dt class="hdlist1"><a href="https://codeberg.org/winterl/linc">linc</a></dt>
-<dd>
-<p>Une collection de code en C pour l&#8217;algèbre linéaire.</p>
-</dd>
-<dt class="hdlist1"><a href="https://codeberg.org/winterl/tmux-goway">tmux-goway</a></dt>
-<dd>
-<p>Un changeur de session TMUX.</p>
-</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_courts_textes">Courts textes</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="view.html?file=files/textes/2025-10-Colorless.txt">2025-10 Colorless</a></p>
-</li>
-<li>
-<p><a href="view.html?file=files/textes/2025-10-SOufrance.txt">2025-10 Souffrance</a></p>
-</li>
-<li>
-<p><a href="view.html?file=files/textes/2025-10-Colorless.txt">2025-10 Colorless</a></p>
-</li>
-<li>
-<p><a href="view.html?file=files/textes/2025-10-Les-logiciels-libres-ouverts.txt">2025-10
-Les logiciels libres et les logiciels à code ouvert, et leur place dans le monde
-de l&#8217;informatique</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_contacts">Contacts</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://codeberg.org/winterl">Codeberg/winterl</a></p>
-</li>
-<li>
-<p>[Matrix] @winter.l:matrix.org</p>
-</li>
-<li>
-<p>winter.leg.147 [at] gmail.com</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<hr />
-<footer>
-  使用フォント：「Courier Prime」と「Zen Maru Gothic」<br />
-  asciidocによって生成されたファイル
-</footer>
-</body>
+      ul {
+        list-style-type: disc;
+      }
+      ol.arabic {
+        list-style-type: decimal;
+      }
+      ol.loweralpha {
+        list-style-type: lower-alpha;
+      }
+      ol.upperalpha {
+        list-style-type: upper-alpha;
+      }
+      ol.lowerroman {
+        list-style-type: lower-roman;
+      }
+      ol.upperroman {
+        list-style-type: upper-roman;
+      }
+      .hdlist td {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body class="article">
+    <div id="header">
+      <h1>Winter</h1>
+    </div>
+    <div id="content">
+      <div id="preamble">
+        <div class="sectionbody">
+          <div class="paragraph">
+            <p>
+              私はTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。
+            </p>
+          </div>
+          <div class="paragraph">
+            <p>Colemak &gt; QWERTY</p>
+          </div>
+        </div>
+      </div>
+      <div class="sect1">
+        <h2 id="_プロジェクト">プロジェクト</h2>
+        <div class="sectionbody">
+          <div class="dlist">
+            <dl>
+              <dt class="hdlist1">
+                <a href="https://codeberg.org/winterl/dev">dev</a>
+              </dt>
+              <dd>
+                <p>La configuration de mon système pour mon usage personnel.</p>
+              </dd>
+              <dt class="hdlist1">
+                <a href="https://codeberg.org/winterl/linc">linc</a>
+              </dt>
+              <dd>
+                <p>
+                  Une collection de code en C pour l&#8217;algèbre linéaire.
+                </p>
+              </dd>
+              <dt class="hdlist1">
+                <a href="https://codeberg.org/winterl/tmux-goway">tmux-goway</a>
+              </dt>
+              <dd>
+                <p>Un changeur de session TMUX.</p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="sect1">
+        <h2 id="_courts_textes">Courts textes</h2>
+        <div class="sectionbody">
+          <div class="ulist">
+            <ul>
+              <li>
+                <p>
+                  <a href="view.html?file=files/textes/2025-10-Colorless.txt"
+                    >2025-10 Colorless</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="view.html?file=files/textes/2025-10-SOufrance.txt"
+                    >2025-10 Souffrance</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="view.html?file=files/textes/2025-10-Colorless.txt"
+                    >2025-10 Colorless</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="view.html?file=files/textes/2025-10-Les-logiciels-libres-ouverts.txt"
+                    >2025-10 Les logiciels libres et les logiciels à code
+                    ouvert, et leur place dans le monde de
+                    l&#8217;informatique</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sect1">
+        <h2 id="_long_textes">Long textes</h2>
+        <div class="sectionbody">
+          <div class="ulist">
+            <ul>
+              <li>
+                <p>
+                  <a href="files/romans/le-goût-de-tes-baisers.pdf"
+                    >Le goût de tes baisers</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sect1">
+        <h2 id="_contacts">Contacts</h2>
+        <div class="sectionbody">
+          <div class="ulist">
+            <ul>
+              <li>
+                <p>
+                  <a href="https://codeberg.org/winterl">Codeberg/winterl</a>
+                </p>
+              </li>
+              <li>
+                <p>[Matrix] @winter.l:matrix.org</p>
+              </li>
+              <li>
+                <p>winter.leg.147 [at] gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      使用フォント：「Courier Prime」と「Zen Maru Gothic」<br />
+      asciidocによって生成されたファイル
+    </footer>
+  </body>
 </html>
