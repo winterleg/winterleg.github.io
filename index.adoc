@@ -32,6 +32,5 @@ https://codeberg.org/winterl/tmux-goway[tmux-goway]:::
 
 == Contacts
 * https://codeberg.org/winterl[Codeberg/winterl]
-* [Matrix] @winter.l:matrix.org
 * winter.leg.147 [at] gmail.com
 
