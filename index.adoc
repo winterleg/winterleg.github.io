@@ -20,8 +20,6 @@ https://codeberg.org/winterl/tmux-goway[tmux-goway]:::
   Un changeur de session TMUX.
 
 == Courts textes
-* link:files/textes/2026-03-surcomplexification-des-textes.html[2026-03 La
-  sur-complexification du texte]
 * link:files/textes/2025-10-Colorless.html[2025-10 Colorless]
 * link:files/textes/2025-10-Souffrance.html[2025-10 Souffrance]
 * link:files/textes/2025-10-Les-logiciels-libres-ouverts.html[
