@@ -1,0 +1,47 @@
+:nofooter:
+:stylesheet: ../../../compact.css
+= Synapse - Semaine du 16 mars
+
+== Objectifs
+
+. 1H.  Ajouter du code pour pas placer trop de composantes proches l'une
+  de l'autre.
+
+. 1H.  Initier le code pour l'analyse du circuit.
+
+
+Total: 3H
+
+
+== Réalisation
+
+. ~1H.  Fait.
+
+. 2H.  Je pense que c'est fait, je n'ai pas encore tester le code.
+
+. 1H.  Correction du code pour le graph qui ne trouvait pas la source, et ajout
+  du cadenas dans le circuit.
+
+
+== Analyse des écarts
+
+. Aucun;
+. Faire le code initial rentrait dans le temps, cependant ça ne checkait
+  pas récursivement les voisins des cases du circuit. Du coup, des manipulations
+  pouvaient être faits pour contredire l'intention.
+
+
+== Problèmes rencontrés et solutions
+
+. Les composantes ont tendance à « glitcher » quand ils sont repoussées à leur
+  position précédente.  Aucune solution trouvée pour l'instant.
+
+. Le code n'a pas encore été testé.  Ce sera fait plus tard.
+
+
+== Technologies acquises et utilisées
+
+. Les lois de Kirchhoff apprises en classe pour calculer la résistance du
+  circuit.
+
+

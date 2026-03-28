@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="author" content="（または『無く線ウィンター』）">
-<title>Winter</title>
+<title>Synapse - Semaine du 23 mars</title>
 <style>
 /*
  * compact.css, version 1.9
@@ -578,118 +577,108 @@ ol.upperroman {
 </head>
 <body class="article">
 <div id="header">
-<h1>Winter</h1>
-<div class="details">
-<span id="author" class="author">（または『無く線ウィンター』）</span><br>
-</div>
+<h1>Synapse - Semaine du 23 mars</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>アタシはTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。</p>
+<p>Retour à <a href="../../../index.html">Index</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_objectifs">Objectifs</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>3H.  Faire les assets pour les résistances, la source et le cadenas.</p>
+</li>
+<li>
+<p>30min.  Ajouter une gestion des collisions pour pas que les objets LERPés avec
+<code>isOnGrid = false</code> entre en collision.</p>
+</li>
+<li>
+<p>1H.  Rédaction du journal de bord</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>Colemak &gt; QWERTY</p>
+<p>Total: 5H30.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_プロジェクト">プロジェクト</h2>
+<h2 id="_réalisation">Réalisation</h2>
 <div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1"><a href="https://codeberg.org/winterl/dev">dev</a></dt>
-<dd>
-<p>La configuration de mon système pour mon usage personnel.</p>
-</dd>
-<dt class="hdlist1"><a href="https://codeberg.org/winterl/linc">linc</a></dt>
-<dd>
-<p>Une collection de code en C pour l&#8217;algèbre linéaire.</p>
-</dd>
-<dt class="hdlist1"><a href="https://codeberg.org/winterl/tmux-goway">tmux-goway</a></dt>
-<dd>
-<p>Un changeur de session TMUX.</p>
-</dd>
-</dl>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>4H.  fait.</p>
+</li>
+<li>
+<p>4H.  Rien.</p>
+</li>
+<li>
+<p>1H.  Fait</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_courts_textes">Courts textes</h2>
+<h2 id="_analyse_des_écarts">Analyse des écarts</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p><a href="files/textes/2026-03-surcomplexification-des-textes.html">2026-03 La
-sur-complexification du texte</a></p>
+<p>Ajout de code qui n&#8217;était pas prévu dans l&#8217;objectif initial, mais qui est
+nécessaire pour le fonctionnement des composantes.</p>
 </li>
 <li>
-<p><a href="files/textes/2025-10-Colorless.html">2025-10 Colorless</a></p>
+<p>Je pensais que faire le déplacement des objets en dehors du circuit avec un
+LERP serait facile à faire respecter les collisions, mais finalement je
+n&#8217;arrive tout simplement pas à faire ça.  J&#8217;ai remplacé ça par une force en
+direction du restPosition à la place.  Cependant, cela a entrainé plusieurs
+problèmes dans le reste du fonctionnement du circuit.  Des fois, les objets ne
+bougeaient pas du tout, d&#8217;autres fois, bougeaient tout le temps.  Finalement,
+je ne suis toujours pas arrivée à une situation satisfaisante.  J&#8217;ai donc
+remis à zéro le progrès que j&#8217;espèrais.</p>
 </li>
 <li>
-<p><a href="files/textes/2025-10-Souffrance.html">2025-10 Souffrance</a></p>
+<p>n.d.</p>
 </li>
-<li>
-<p><a href="files/textes/2025-10-Les-logiciels-libres-ouverts.html">
-2025-10 Les logiciels libres et les logiciels à code ouvert, et leur place
-dans le monde de l&#8217;informatique</a></p>
-</li>
-</ul>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_long_textes">Long textes</h2>
+<h2 id="_problèmes_rencontrés_et_solutions">Problèmes rencontrés et solutions</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p><a href="files/romans/le-goût-de-tes-baisers.pdf">Le goût de tes
-baisers</a></p>
+<p>n.d.</p>
 </li>
-</ul>
+<li>
+<p>Voir plus haut.</p>
+</li>
+<li>
+<p>n.d.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_bilans">Bilans</h2>
+<h2 id="_technologies_acquises_et_utilisées">Technologies acquises et utilisées</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="files/bilan/synapse/semaine-03-16.html" class="bare">files/bilan/synapse/semaine-03-16.html</a></p>
-</li>
-<li>
-<p><a href="files/bilan/synapse/semaine-03-23.html" class="bare">files/bilan/synapse/semaine-03-23.html</a></p>
-</li>
-<li>
-<p><a href="files/bilan/synapse/semaine-03-30.html" class="bare">files/bilan/synapse/semaine-03-30.html</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_contacts">Contacts</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://codeberg.org/winterl">Codeberg/winterl</a></p>
-</li>
-<li>
-<p>winter.leg.147 [at] gmail.com</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>n.d.</p>
 </div>
 </div>
 </div>
 </div>
-<hr />
-<footer>
-  使用フォント：「Courier Prime」と「Zen Maru Gothic」<br />
-  asciidocによって生成されたファイル
-</footer>
 </body>
 </html>

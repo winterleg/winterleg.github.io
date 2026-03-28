@@ -1,0 +1,52 @@
+:nofooter:
+:stylesheet: ../../../compact.css
+= Synapse - Semaine du 23 mars
+
+Retour à link:../../../index.html[Index]
+
+
+== Objectifs
+
+. 3H.  Faire les assets pour les résistances, la source et le cadenas.
+
+. 30min.  Ajouter une gestion des collisions pour pas que les objets LERPés avec
+  `isOnGrid = false` entre en collision.
+
+. 1H.  Rédaction du journal de bord
+
+
+Total: 5H30.
+
+
+== Réalisation
+
+. 4H.  fait.
+. 4H.  Rien.
+. 1H.  Fait
+
+
+== Analyse des écarts
+. Ajout de code qui n'était pas prévu dans l'objectif initial, mais qui est
+  nécessaire pour le fonctionnement des composantes.
+. Je pensais que faire le déplacement des objets en dehors du circuit avec un
+  LERP serait facile à faire respecter les collisions, mais finalement je
+  n'arrive tout simplement pas à faire ça.  J'ai remplacé ça par une force en
+  direction du restPosition à la place.  Cependant, cela a entrainé plusieurs
+  problèmes dans le reste du fonctionnement du circuit.  Des fois, les objets ne
+  bougeaient pas du tout, d'autres fois, bougeaient tout le temps.  Finalement,
+  je ne suis toujours pas arrivée à une situation satisfaisante.  J'ai donc
+  remis à zéro le progrès que j'espèrais.
+. n.d.
+
+
+== Problèmes rencontrés et solutions
+
+. n.d.
+. Voir plus haut.
+. n.d.
+
+== Technologies acquises et utilisées
+
+n.d.
+
+

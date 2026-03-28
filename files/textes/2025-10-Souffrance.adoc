@@ -1,6 +1,13 @@
-Souffrance
-==========
+= Souffrance
+Winter
+:nofooter:
+:toc:
+:lang: fr
+:stem: latexmath
+:stylesheet: ../../compact.css
 
+[source]
+----
 O Souffrance ma bien aimé depuis toujours
 Comme tu es si persistente dans mes jours
 Chaleureux, tu ne l'es jamais. Tes mains glaciales,
@@ -10,3 +17,8 @@ Mes rêves irréalistes du profond abysse
 La réalité m'échappe, le sable glissant
 Mon esprit, croyant ta tendresse s'évadant
 Des feux, la lumière, dresse une abscisse
+----
+
+---
+
+Retour à link:../../index.html[Index]

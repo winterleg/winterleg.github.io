@@ -3,9 +3,10 @@
 :stylesheet: compact.css
 
 = Winter
+（または『無く線ウィンター』）
 :docinfo: private,index-docinfo-footer.html
 
-私はTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。
+アタシはTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。
 
 Colemak > QWERTY
 
@@ -19,16 +20,23 @@ https://codeberg.org/winterl/tmux-goway[tmux-goway]:::
   Un changeur de session TMUX.
 
 == Courts textes
-* link:view.html?file=files/textes/2025-10-Colorless.txt[2025-10 Colorless]
-* link:view.html?file=files/textes/2025-10-SOufrance.txt[2025-10 Souffrance]
-* link:view.html?file=files/textes/2025-10-Colorless.txt[2025-10 Colorless]
-* link:view.html?file=files/textes/2025-10-Les-logiciels-libres-ouverts.txt[2025-10
-    Les logiciels libres et les logiciels à code ouvert, et leur place dans le monde
-    de l'informatique]
+* link:files/textes/2026-03-surcomplexification-des-textes.html[2026-03 La
+  sur-complexification du texte]
+* link:files/textes/2025-10-Colorless.html[2025-10 Colorless]
+* link:files/textes/2025-10-Souffrance.html[2025-10 Souffrance]
+* link:files/textes/2025-10-Les-logiciels-libres-ouverts.html[
+  2025-10 Les logiciels libres et les logiciels à code ouvert, et leur place
+  dans le monde de l'informatique]
 
 == Long textes
 * link:files/romans/le-goût-de-tes-baisers.pdf[Le goût de tes
   baisers]
+
+== Bilans
+* link:files/bilan/synapse/semaine-03-16.html[]
+* link:files/bilan/synapse/semaine-03-23.html[]
+* link:files/bilan/synapse/semaine-03-30.html[]
+
 
 == Contacts
 * https://codeberg.org/winterl[Codeberg/winterl]

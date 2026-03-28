@@ -1,0 +1,38 @@
+:nofooter:
+:lang: fr
+:stylesheet: ../../../compact.css
+= Synapse - Semaine du 30 mars
+
+Retour à link:../../../index.html[Index]
+
+
+== Objectifs
+
+. Deal with the code for the breakers i think
+. figure out a proper clues
+
+Total: 5H30.
+
+
+== Réalisation
+
+. 2H.  fait.
+. 4H.  Rien.
+. 1H.  Fait
+
+
+== Analyse des écarts
+
+. n.d.
+
+
+== Problèmes rencontrés et solutions
+
+. n.d.
+
+
+== Technologies acquises et utilisées
+
+n.d.
+
+

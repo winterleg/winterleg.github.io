@@ -1,6 +1,13 @@
-Colorless
-=========
+= Colorless
+Winter
+:nofooter:
+:toc:
+:lang: fr
+:stem: latexmath
+:stylesheet: ../../compact.css
 
+[source]
+----
 I'm broken glass
 I may be beautiful
 But the rays of light
@@ -23,3 +30,8 @@ I only seek to be happy
 
 Can I keep my colors
 without being made ashamed of it?
+----
+
+---
+
+Retour à link:../../index.html[Index]

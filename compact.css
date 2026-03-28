@@ -6,6 +6,33 @@
  * Usage: asciidoc -a theme=compact ...
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: local("Zen Maru Gothic"), local("ZenMaruGothic-Regular");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: local("Zen Maru Gothic Bold"), local("ZenMaruGothic-Bold");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: local("Zen Maru Gothic Light"), local("ZenMaruGothic-Light");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: local("Zen Maru Gothic Medium"), local("ZenMaruGothic-Medium");
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   --bg-color: #f5f5f5;
   --text-color: #333333;
@@ -47,8 +74,8 @@ img {
 /*** Layout ***/
 
 body {
-  margin: 10px auto;
-  padding: 0 20px;
+  margin: 30px auto;
+  padding: 0 50px;
   max-width: 90ch;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -60,8 +87,8 @@ body {
   display: block;
 }
 #toc {
-  margin: 1em 0;
-  text-align: center;
+  margin: 0em 0;
+  text-align: left;
 }
 .toclevel2 {
   margin-left: 1em;
@@ -125,6 +152,10 @@ h5 {
 
 .paragraph {
   margin: 1em 0 0 0;
+  text-align: justify;
+}
+body {
+  text-align: justify;
 }
 .sidebarblock .paragraph:first-child,
 .exampleblock .paragraph:first-child,
@@ -197,14 +228,17 @@ body {
   text-align: center;
   font-family: Georgia, serif;
 }
-#email {
+#email,
+#author {
   font-size: 0.85em;
+  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
 }
 #revnumber {
   font-size: 0.75em;
 }
 #toc {
   font-size: 0.9em;
+  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
 }
 #toctitle {
   font-weight: bold;
@@ -241,18 +275,20 @@ h5 {
 .title {
   font-size: 106%; /* 0.9em */
   font-weight: bold;
+  padding-top: 1em;
+  text-align: center;
 }
 
 code,
 .monospaced {
-  font-family: monospace;
-  font-size: 106%;
+  font-family: "Courier Prime Code", "Zen Maru Gothic", monospace;
+  font-size: 100%;
 } /* 0.9em */
 pre {
-  font-size: 141%;
+  font-size: 100%;
 } /* 1.2em */
 p code {
-  font-size: 118%;
+  font-size: 100%;
 } /* 1em */
 dt,
 td.hdlist1 {
