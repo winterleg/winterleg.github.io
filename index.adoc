@@ -3,14 +3,13 @@
 :stylesheet: compact.css
 
 = Winter
-（または『無く線ウィンター』）
 :docinfo: private,index-docinfo-footer.html
 
-アタシはTypst、.NET、C/C++、Go興味のあるコンピューターサイエンス選考の学生です。
+Étudiante en science informatique interressée par Typst, .NET et C/C++.
 
 Colemak > QWERTY
 
-== プロジェクト
+== Projets
 
 https://codeberg.org/winterl/dev[dev]:::
   La configuration de mon système pour mon usage personnel.
