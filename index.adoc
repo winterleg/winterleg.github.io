@@ -19,22 +19,22 @@ https://codeberg.org/winterl/linc[linc]:::
 https://codeberg.org/winterl/tmux-goway[tmux-goway]:::
   Un changeur de session TMUX.
 
-== Courts textes
-* link:files/textes/2025-10-Colorless.html[2025-10 Colorless]
-* link:files/textes/2025-10-Souffrance.html[2025-10 Souffrance]
-* link:files/textes/2025-10-Les-logiciels-libres-ouverts.html[
-  2025-10 Les logiciels libres et les logiciels à code ouvert, et leur place
-  dans le monde de l'informatique]
-
-== Long textes
-* link:files/romans/le-goût-de-tes-baisers.pdf[Le goût de tes
-  baisers]
-
-== Bilans
-* link:files/bilan/synapse/semaine-03-16.html[]
-* link:files/bilan/synapse/semaine-03-23.html[]
-* link:files/bilan/synapse/semaine-03-30.html[]
-
+// == Courts textes
+// * link:files/textes/2025-10-Colorless.html[2025-10 Colorless]
+// * link:files/textes/2025-10-Souffrance.html[2025-10 Souffrance]
+// * link:files/textes/2025-10-Les-logiciels-libres-ouverts.html[
+//   2025-10 Les logiciels libres et les logiciels à code ouvert, et leur place
+//   dans le monde de l'informatique]
+//
+// == Long textes
+// * link:files/romans/le-goût-de-tes-baisers.pdf[Le goût de tes
+//   baisers]
+//
+// == Bilans
+// * link:files/bilan/synapse/semaine-03-16.html[]
+// * link:files/bilan/synapse/semaine-03-23.html[]
+// * link:files/bilan/synapse/semaine-03-30.html[]
+//
 
 == Contacts
 * https://codeberg.org/winterl[Codeberg/winterl]

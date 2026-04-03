@@ -10,8 +10,7 @@ Retour à link:../../../index.html[Index]
 
 . Deal with the code for the breakers i think
 . figure out a proper clues
-
-Total: 5H30.
+. figure out the way to use player and finniveau i think
 
 
 == Réalisation

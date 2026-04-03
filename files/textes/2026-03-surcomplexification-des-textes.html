@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<title>Synapse - Semaine du 23 mars</title>
+<meta name="author" content="Winter">
+<title>Texte :: La sur-complexification du texte.</title>
 <style>
 /*
  * compact.css, version 1.9
@@ -15,7 +16,7 @@
  * Usage: asciidoc -a theme=compact ...
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @font-face {
   font-family: "Zen Maru Gothic";
@@ -96,8 +97,8 @@ body {
   display: block;
 }
 #toc {
-  margin: 0em 0;
-  text-align: left;
+  margin: 1em 0;
+  text-align: center;
 }
 .toclevel2 {
   margin-left: 1em;
@@ -163,9 +164,6 @@ h5 {
   margin: 1em 0 0 0;
   text-align: justify;
 }
-body {
-  text-align: justify;
-}
 .sidebarblock .paragraph:first-child,
 .exampleblock .paragraph:first-child,
 .admonitionblock .paragraph:first-child {
@@ -227,7 +225,7 @@ body {
 }
 #header {
   text-align: center;
-  font-family: Georgia, serif;
+  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
 }
 #header h1 {
   font-size: 2em;
@@ -247,7 +245,6 @@ body {
 }
 #toc {
   font-size: 0.9em;
-  font-family: "Courier Prime", "Zen Maru Gothic", monospace;
 }
 #toctitle {
   font-weight: bold;
@@ -284,13 +281,11 @@ h5 {
 .title {
   font-size: 106%; /* 0.9em */
   font-weight: bold;
-  padding-top: 1em;
-  text-align: center;
 }
 
 code,
 .monospaced {
-  font-family: "Courier Prime Code", "Zen Maru Gothic", monospace;
+  font-family: monospace;
   font-size: 100%;
 } /* 0.9em */
 pre {
@@ -577,98 +572,23 @@ ol.upperroman {
 </head>
 <body class="article">
 <div id="header">
-<h1>Synapse - Semaine du 23 mars</h1>
+<h1>Texte :: La sur-complexification du texte.</h1>
+<div class="details">
+<span id="author" class="author">Winter</span><br>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Retour à <a href="../../../index.html">Index</a></p>
+<p>Retour à <a href="../../index.html">Index</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_objectifs">Objectifs</h2>
+<h2 id="_intro">Intro</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>3H.  Faire les assets pour les résistances, la source et le cadenas.</p>
-</li>
-<li>
-<p>30min.  Ajouter une gestion des collisions pour pas que les objets LERPés avec
-<code>isOnGrid = false</code> entre en collision.</p>
-</li>
-<li>
-<p>1H.  Rédaction du journal de bord</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Total: 5H30.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_réalisation">Réalisation</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>4H.  fait.</p>
-</li>
-<li>
-<p>4H.  Rien.</p>
-</li>
-<li>
-<p>1H.  Fait</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_analyse_des_écarts">Analyse des écarts</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Ajout de code qui n&#8217;était pas prévu dans l&#8217;objectif initial, mais qui est nécessaire pour le fonctionnement des composantes.</p>
-</li>
-<li>
-<p>Je pensais que faire le déplacement des objets en dehors du circuit avec un LERP serait facile à faire respecter les collisions, mais finalement je n&#8217;arrive tout simplement pas à faire ça.  J&#8217;ai remplacé ça par une force en direction du restPosition à la place.  Cependant, cela a entrainé plusieurs problèmes dans le reste du fonctionnement du circuit.  Des fois, les objets ne bougeaient pas du tout, d&#8217;autres fois, bougeaient tout le temps.  Finalement, je ne suis toujours pas arrivée à une situation satisfaisante.  J&#8217;ai donc remis à zéro le progrès que j&#8217;espèrais.</p>
-</li>
-<li>
-<p>n.d.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_problèmes_rencontrés_et_solutions">Problèmes rencontrés et solutions</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>n.d.</p>
-</li>
-<li>
-<p>Voir plus haut.</p>
-</li>
-<li>
-<p>n.d.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_technologies_acquises_et_utilisées">Technologies acquises et utilisées</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>n.d.</p>
-</div>
+
 </div>
 </div>
 </div>

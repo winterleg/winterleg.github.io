@@ -26,16 +26,8 @@ Total: 5H30.
 
 
 == Analyse des écarts
-. Ajout de code qui n'était pas prévu dans l'objectif initial, mais qui est
-  nécessaire pour le fonctionnement des composantes.
-. Je pensais que faire le déplacement des objets en dehors du circuit avec un
-  LERP serait facile à faire respecter les collisions, mais finalement je
-  n'arrive tout simplement pas à faire ça.  J'ai remplacé ça par une force en
-  direction du restPosition à la place.  Cependant, cela a entrainé plusieurs
-  problèmes dans le reste du fonctionnement du circuit.  Des fois, les objets ne
-  bougeaient pas du tout, d'autres fois, bougeaient tout le temps.  Finalement,
-  je ne suis toujours pas arrivée à une situation satisfaisante.  J'ai donc
-  remis à zéro le progrès que j'espèrais.
+. Ajout de code qui n'était pas prévu dans l'objectif initial, mais qui est nécessaire pour le fonctionnement des composantes.
+. Je pensais que faire le déplacement des objets en dehors du circuit avec un LERP serait facile à faire respecter les collisions, mais finalement je n'arrive tout simplement pas à faire ça.  J'ai remplacé ça par une force en direction du restPosition à la place.  Cependant, cela a entrainé plusieurs problèmes dans le reste du fonctionnement du circuit.  Des fois, les objets ne bougeaient pas du tout, d'autres fois, bougeaient tout le temps.  Finalement, je ne suis toujours pas arrivée à une situation satisfaisante.  J'ai donc remis à zéro le progrès que j'espèrais.
 . n.d.
 
 
